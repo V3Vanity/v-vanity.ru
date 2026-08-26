@@ -1,0 +1,109 @@
+.main
+  position: relative
+  height: 100vh
+  &-container
+    display: flex
+    margin-top: 120px
+  &-info
+    &__title
+      font-family: 'Tektur'
+      color: #fff
+      font-size: 80px
+      font-weight: normal
+    &__subtitle
+      font-family: 'Montserrat Alternates'
+      font-weight: 300
+      font-size: 40px
+      margin-bottom: 90px
+      line-height: 35px
+      max-width: 463px
+
+  &-block
+    display: flex
+    justify-content: space-between
+    position: relative
+    width: 203px
+    height: 65px
+    display: flex
+    padding: 7px
+    &__plus
+      position: absolute
+      left: 0
+      top: 0
+      background-color: #3c3b3b
+      width: 152px
+      height: 65px
+      border-radius: 50px
+      z-index: 4
+    &__minus
+      position: absolute
+      left: 140px
+      top: 10px
+      background-color: #3c3b3b
+      width: 25px
+      height: 42px
+      z-index: 1
+    &__set
+      position: absolute
+      left: 150px
+      top: 0
+      border-radius: 50px
+      width: 70px
+      height: 70px
+      background-color: #3c3b3b
+      z-index: 4
+    &__del
+      &-one
+        position: absolute
+        left: 141px
+        top: 0
+        width: 20px
+        height: 16px
+        border-radius: 60px
+        background-color: #000000
+        z-index: 3
+      &-two
+        position: absolute
+        left: 141px
+        top: 49px
+        width: 20px
+        height: 16px
+        border-radius: 60px
+        background-color: #000000
+        z-index: 3
+    &__button
+      font-family: 'Montserrat Alternates'
+      font-weight: normal
+      font-size: 16px
+      display: flex
+      justify-content: center
+      align-items: center
+      text-decoration: none
+      background-color: #242424
+      width: 128px
+      height: 52px
+      border-radius: 50px
+      border: none
+      margin-left: 4px
+      z-index: 7
+    &__icon
+      z-index: 7
+      width: 49px
+      height: 49px
+      margin-top: 1.5px
+  &-img
+    position: absolute
+    z-index: -1
+    top: -90px
+    right: 105px
+    transition: opacity 1s ease-out // Плавное изменение opacity
+    animation: fadeIn 2s ease-out forwards // Анимация появления
+  &-image
+    position: absolute
+    top: 70%
+    left: 50%
+    transform: translate(-50%, -50%)
+  &-social
+    margin-top: 90px
+    &__link
+      margin-right: 20px

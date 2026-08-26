@@ -1,0 +1,54 @@
+.header
+  &-background
+    width: 562px
+    height: 1024px
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 0
+    background-color: #272727
+    animation-name: circle-to-square
+    animation-duration: 3s
+    animation-timing-function: ease
+  &-container 
+    display: flex
+    padding-top: 50px
+  &-nav 
+    margin-left: 590px
+    z-index: 1
+    display: flex
+    justify-content: space-between
+    width: 25%
+    align-items: center
+    &__like
+      &-img
+        &:hover 
+          animation-name: tuc-tuc
+          animation-duration: 1s
+          animation-direction: reverse
+          animation-iteration-count: infinite
+    &__user
+      &-img  
+        &:hover 
+          animation-name: zoom
+          animation-duration: 5s
+          animation-direction: reverse
+          animation-iteration-count: 1  
+    &__basket
+      &-img  
+        &:hover 
+          animation-name: zoom
+          animation-duration: 10s
+          animation-direction: reverse
+          animation-iteration-count: 1  
+  &__menu
+    z-index: 1
+    margin-left: 100px
+    align-content: center
+    &-img 
+      &:hover 
+        animation-name: zoom
+        animation-duration: 10s
+        animation-direction: reverse
+        animation-iteration-count: 1  
+     

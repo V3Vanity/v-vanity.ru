@@ -1,0 +1,57 @@
+.nav 
+  &-container
+     display: flex  
+     align-items: center
+     justify-content: space-between
+     padding: 17px 0 17px 0
+  &-logo 
+    margin-right: -40%
+    cursor: pointer
+  &-list 
+    display: flex
+    justify-content: space-between
+    list-style-type: none
+    padding: 0
+    &__li 
+      margin-right: 25px
+      transition: 0.5s 
+      text-align: center
+      &:hover 
+        transform: scale(1.2)
+        cursor: pointer
+  &-buttons
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border: none
+    
+    &__buy 
+      padding: 15px 34px
+      background-color: #000000
+      color: #FFFFFF
+      font-size: 15px
+      border: 3px double #000000
+      &:hover
+        background-color: #000000cc
+        color: #FFFFFF
+        border: 3px ridge #fff
+      &:focus
+        border: 3px double #fff
+      &:active
+        background-color: #ffffffcc
+        color: #000000
+        border: 3px double #000000
+    &__search
+      margin-left: 25px
+      transition: 0.5s 
+      text-align: center
+      &:hover 
+        transform: scale(1.2)
+        cursor: pointer
+    &__basket 
+      margin-left: 10px
+      transition: 0.5s 
+      text-align: center
+      &:hover 
+        transform: scale(1.2)
+        cursor: pointer

@@ -1,0 +1,110 @@
+@font-face
+  font-family: 'AVA'
+  src:
+    url: ('./fonts/AVA.woff2') format('woff2')
+    url: ('./fonts/AVA.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Bounded'
+  src:
+    url: ('./fonts/Bounded-Regular.woff2') format('woff2')
+    url: ('./fonts/Bounded-Regular.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'DaMiOne'
+  src:
+    url: ('./fonts/DaMiOne.woff2') format('woff2')
+    url: ('./fonts/DaMiOne.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+*
+  color: #fff
+html
+  overflow-x: hidden
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+body
+  margin: 0
+  background-color: #000000
+  overflow-x: hidden
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+
+.container
+  width: 90%
+  margin: auto
+
+// Анимации 
+
+.glow-effect
+  transition: box-shadow 0.5s ease, transform 0.5s ease
+  &:hover
+    box-shadow: 0 0 35px 1px rgba(15, 2, 141, 0.858)
+    transform: scale(1.05)/* Можно менять масштаб */
+.glow-text
+  transition: text-shadow 0.3s ease, transform 0.5s ease
+  &:hover
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7)
+    transform: scale(1.05)
+.glow-svg
+  transition: filter 0.3s ease, transform 0.5s ease
+  &:hover
+    filter: drop-shadow(0 0 15px rgb(144, 0, 255))
+    transform: scale(1.1)
+// Анимации
+@keyframes slideIn
+  0%
+    left: -420px
+    opacity: 0
+
+  100%
+    left: 0
+    opacity: 1
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+@keyframes pulse
+  0%
+    box-shadow: 0 0 80px rgba(200, 100, 255, 0.5), 0 0 150px rgba(200, 100, 255, 0.5)
+    transform: translateY(0)
+  50%
+    box-shadow: 0 0 120px rgba(200, 100, 255, 0.7), 0 0 200px rgba(200, 100, 255, 0.7)
+    transform: translateY(-30px)
+  100%
+    box-shadow: 0 0 80px rgba(200, 100, 255, 0.5), 0 0 150px rgba(200, 100, 255, 0.5)
+    transform: translateY(0)
+
+@keyframes pulse-text
+  0%
+    transform: scale(1)
+
+  50%
+    transform: scale(1.03) /* Увеличивается */
+
+  100%
+    transform: scale(1)
+
+// переменные для градиента 
+$circle-size: 320px
+$color-center: rgba(255, 215, 100, 0.8) // Жёлтый центр
+$color-mid: rgba(255, 100, 200, 0.5) // Розовый переход
+$color-edge: rgba(100, 50, 200, 0.6) // Фиолет ближе к краю
+$color-outer: rgba(50, 0, 100, 0.8) // Глубокий фиолет
+
+$glow-color: rgba(200, 100, 255, 0.6)

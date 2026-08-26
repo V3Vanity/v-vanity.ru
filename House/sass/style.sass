@@ -1,0 +1,683 @@
+@keyframes show
+  0%
+   opacity: (0)
+
+
+  100%
+    opacity: (1)
+
+
+html
+  scroll-behavior: smooth
+body 
+  font-family: sans-serif
+  margin: 0
+header
+  background-color: #E1EDE6
+.container 
+  margin: auto
+  width: 1110px
+.header
+  &-container  
+    margin: auto
+    width: 1110px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 38px 0 38px 0
+  &-info 
+    display: flex
+    width: 470px
+    justify-content: space-between
+    &__button
+      background-color: #E1EDE6
+      border: none
+      border-radius: 5px
+      display: flex
+      text-align: center
+      &:hover
+      color: #598D66
+      &:focus 
+        background: #D4E8D9
+        
+      &:active
+        background-color: #bbd5c2
+        border: 2px solid #2C2D35
+      &-img
+        margin: 0
+
+  &-text 
+    font-size: 20px
+    font-weight: 500
+    text-decoration: none
+    color: #2C2D35
+    &:hover
+      color: #598D66
+    &:focus 
+      color: #2C2D35
+      background-color: #D4E8D9
+    &:active
+      color: #376B44
+
+
+
+// ------ Body и header -------
+
+.main
+  &-img 
+    height: 621px
+    &__bird 
+        height: 100%
+  &-container 
+    display: flex
+    justify-content: space-between
+  &-info
+    padding-top: 145px
+    margin-left: 30px
+    &__title 
+      font-weight: 500
+      font-size: 60px
+      line-height: 66px
+      color: #2C2D35
+      margin-bottom: 20px
+      margin-top: 0
+      &-green 
+        color: #598D66
+    &__subtitle
+      font-weight: 500
+      font-size: 18px
+      color: #86928B
+      line-height: 27px
+      margin-bottom: 60px
+      margin-top: 0
+    &__button 
+      text-decoration: none
+      border: 2px solid #598D66
+      padding: 21px 60px
+      background-color: #fff
+      color: #598D66
+      font-weight: 500
+      font-size: 20px
+      &:hover
+        color: #fff
+        background-color: #598D66
+      &:focus 
+        color: #598D66
+        background-color: #D4E8D9
+        outline: 1px solid #598D66
+      &:active
+        color: #fff
+        background-color: #376B44   
+
+// ---- main ----
+
+.aside 
+  &-container 
+  &-nav 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__title 
+      color: #2C2D35
+      font-weight: 500
+      font-size: 40px
+      line-height: 44px
+    &__info
+      &-button 
+        padding: 10px 20px
+        border-radius: 15px
+        border: none 
+        background-color: #D4E8D9
+        margin-left: 32px
+        &:hover
+          color: #fff
+          background-color: #598D66
+        &:focus 
+          outline: 3px solid #598D66
+        &:active
+          color: #fff
+          background-color: #376B44   
+  &-slider 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    animation: show 0.5s linear 
+    &__hidden 
+      display: none
+    &__slide 
+      width: 310px
+      height: 700px
+      padding: 20px 20px 25px 20px
+      background-color: #E1EDE6
+      margin-bottom: 30px
+      font-weight: 500
+      &-img 
+      &-subtitle
+        color: #86928B
+        font-size: 18px
+        margin: 20px 0 10px 0
+      &-title
+        color: #2C2D35
+        font-size: 30px
+        margin: 0
+        margin-bottom: 8px
+      &-info 
+        color: #2C2D35
+        font-size: 18px
+        margin: 0
+        margin-bottom: 30px
+      &-price 
+        color: #598D66
+        font-size: 24px
+        margin: 0
+        margin-bottom: 20px
+      &-button 
+        border: 2px solid #598D66
+        padding: 20px 60px
+        color: #598D66
+        font-size: 20px
+        width: 100%
+        &:hover
+          color: #fff
+          background-color: #598D66
+        &:focus 
+          outline: 3px solid #598D66
+        &:active
+          color: #fff
+          background-color: #376B44   
+          
+article  
+  background-image: url(../img/promo.png)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position:  center
+  height: 574px
+.article 
+  &-container
+    color: #fff
+    height: 100%
+  &-title
+    display: flex
+    padding-top: 70px
+    width: 50%
+    &__img
+      margin: 0 20px 0 0
+    &__text
+      font-size: 40px
+      line-height: 40px
+      margin: 0
+      font-weight: 500
+  &-info 
+    width: 50%
+    margin: 20px 0 0 0 
+    &__text
+      font-size: 18px
+      line-height: 27px
+      margin: 0 0 35px 0 
+    &__button        
+      margin-top: 60px
+      padding: 20px 60px
+      background-color: #EEDB6D
+      color: #000000
+      font-size: 20px
+      border: none
+      &:hover
+        color: #000000
+        background-color: #FAEB97
+      &:focus 
+        color: #000000
+        background-color: #FAEB97
+        outline: 1px solid #A38314
+      &:active
+        color: #000000
+        background-color: #D9B949 
+
+// ----- article -----
+
+.team
+  display: flex
+  margin: 0
+  font-weight: 500
+  margin-top: 70px
+  margin-bottom: 70px
+  &-img 
+    margin: 0
+    margin-right: 30px    
+  &-text
+    &__info
+      margin: 0
+      margin-top: 124px
+      &-title
+        font-size: 40px
+        line-height: 44px 
+      &-text 
+        font-size: 18px 
+        line-height: 27px 
+        margin: 0
+        margin-bottom: 20px
+    &__friends  
+      &-img 
+        margin: 0
+        margin-right: 30px
+footer  
+  background-color: #E1EDE6
+  padding: 23px 0
+.footer
+  &-we 
+    display: flex
+    justify-content: space-between
+    &__block 
+      margin: 0
+      margin-right: 142px
+      &-number 
+        margin: 35px 0 8px 0 
+        font-size: 20px
+      &-subtitle 
+        font-size: 18px
+        color: #86928B
+    &__reproduction
+      margin: 0
+      margin-right: 58px
+      padding-top: 20px
+      &-title 
+        text-decoration: none
+        font-size: 20px
+        color:#2C2D35
+        &:hover
+          color: #598D66
+        &:focus 
+          color: #2C2D35
+          background-color: #D4E8D9
+        &:active
+          color: #376B44    
+      &-text 
+        font-size: 18px
+        color: #86928B
+    &__new
+      margin:20px 60px 0 0
+      &-title 
+        text-decoration: none
+        font-size: 20px
+        color:#2C2D35
+        &:hover
+          color: #598D66
+        &:focus 
+          color: #2C2D35
+          background-color: #D4E8D9
+        &:active
+          color: #376B44 
+      &-text 
+        font-size: 18px
+        color:#86928B
+    &__info
+      margin:20px 0 0 0
+      &-title 
+        text-decoration: none
+        font-size: 20px
+        color: #2C2D35
+        &:hover
+          color: #598D66
+        &:focus 
+          color: #2C2D35
+          background-color: #D4E8D9
+        &:active
+          color: #376B44  
+      &-text 
+        font-size: 18px
+        color:#86928B
+    &__contaks
+      margin: 0
+      padding-top: 26px
+      margin-left: 200px
+      &-image 
+        &__img 
+          margin: 0 
+          margin-right: 30px
+      &-text 
+        font-size: 12px
+        color: #86928B
+.container-basket
+  position: fixed 
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 999
+  background-color: rgb(0, 0, 0, .3)      
+  overflow-y: auto
+  visibility: hidden
+  opacity: 0
+  &__open 
+    visibility: visible
+    opacity: 1
+
+.basket
+  display: flex
+  flex-wrap: wrap
+  margin: 2% 18% 2% 18%
+  border-radius: 10px
+  box-shadow: 0px 5px 32px 5px rgb(0,0,0,0.54)
+  padding-bottom: 30px
+  &-title 
+    width: 100%
+    text-align: center
+  background-color: #fff
+  &-modal
+    &__close 
+      border: none 
+      background-color: transparent
+      padding: 5px
+      position: absolute
+      top: 0px
+      right: 18.8%
+      top: 6%
+  &-wrapper
+    margin-left: 20px
+    z-index: 1
+  &-slider 
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 1000%
+    margin: auto
+    opacity: 100%
+    z-index: 1
+    padding: 2%
+    &__delete 
+      border: 2px solid #598D66
+      padding: 10px 30px
+      color: #598D66
+      font-size: 12px
+      width: 100%  
+      &:hover
+        color: #598D66
+      &:focus 
+        color: #2C2D35
+        background-color: #D4E8D9
+      &:active
+        color: #376B44
+    &__buy
+      border: 2px solid #598D66
+      padding: 10px 30px
+      color: #598D66
+      font-size: 18px
+      width: 60%  
+      margin: auto
+      &:hover
+        color: #598D66
+      &:focus 
+        color: #2C2D35
+        background-color: #D4E8D9
+      &:active
+        color: #376B44
+    &__slide 
+      border-radius: 5px
+      width: 400px
+      padding: 10px
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 2%
+      background-color: #E1EDE6
+      z-index: inherit
+      &-img 
+        width: 40%  
+
+// Адаптив для 1280 px Экранов 
+
+@media (max-width: 1280px) 
+  .container 
+    width: 980px
+  .aside
+    &-slider
+      &__slide
+        width: 250px
+        height: 520px
+        &-img 
+          width: 100%
+        &-subtitle
+          font-size: 14px
+          margin: 8px 0 5px 0
+        &-title
+          font-size: 19px
+          margin-bottom: 5px
+        &-info 
+          font-size: 13px
+          margin-bottom: 15px
+        &-price 
+          font-size: 19px
+        &-button  
+          padding: 10px 10px
+  .article 
+    &-title 
+      padding-top: 35px
+      width: 68%
+      margin-bottom: 70px
+    &-info 
+      &__text 
+        margin: 0 0 35px 
+      &__button 
+        margin-top: 35px
+
+@media (max-width: 992px) 
+  .container 
+    width: 920px
+  .main
+    &-info 
+      padding-top: 110px
+      &__title 
+        font-size: 45px
+        line-height: 55px
+      &__button 
+        padding: 16px 50px
+  .footer
+    &-we
+      &__block
+        margin-right: 130px
+        &-number 
+          font-size: 15px
+        &-subtitle 
+            font-size: 15px
+      &__reproduction
+        &-title 
+          font-size: 18px
+        &-text 
+          font-size: 15px
+      &__new
+        &-title 
+          font-size: 18px
+        &-text 
+          font-size: 15px
+      &__info
+        &-title 
+          font-size: 18px
+        &-text 
+          font-size: 15px
+      &__contaks
+        margin-left: 100px
+        &-image
+          display: flex
+
+@media (max-width: 768px) 
+  .container 
+    width: 690px
+  .main 
+    &-img 
+      height: 380px
+    &-info 
+      padding-top: 30px
+      &__title 
+        font-size: 40px
+      &__subtitle 
+        margin-bottom: 40px
+  .aside 
+    &-nav 
+      &__title 
+        font-size: 30px
+    &-slider
+      &__slide 
+        width: 281px
+        height: 562px  
+  article
+    background-image: url(../img/Rectangle.png)
+  .article 
+    &-title
+      margin-bottom: 30px
+      &__img 
+        margin-top: 10px
+        width: 60px
+        height: 60px
+      &__text
+        font-size: 30px
+    &-info 
+      width: 90%
+      &__text
+        line-height: 33px
+  .team
+    display: flex
+    flex-wrap: wrap
+    &-img 
+      width: 80%  
+    &-text 
+      &__info
+        margin-top: 40px
+        &-title 
+          font-size: 33px
+  .footer
+    &-we
+      flex-wrap: wrap
+      &__block
+        display: grid
+        grid-template-columns: 74%
+        grid-template-rows:52px 52px
+        grid-template-areas: "logo num" "logo sub" 
+        margin: 0
+        width: 100%
+        &-logo 
+          width: 143px
+          margin-top: 30px
+          grid-area: logo 
+        &-number 
+          grid-area: num 
+          font-size: 20px
+        &-subtitle 
+          grid-area: sub
+       
+@media (max-width: 480px)  
+  .container 
+    width: 90%
+  .header
+    &-container 
+      display: flex
+      flex-wrap: wrap 
+    &-logo 
+      width: 100%
+      text-align: center
+      border-bottom: 2px solid #C3D1C6
+      margin-bottom: 16px
+      &__img 
+        margin-bottom: 16px
+    &-text 
+      font-size: 18px
+  .main
+    &-container 
+      padding-top: 10px
+    &-img 
+      height: 239px
+      padding-top: 35px
+      &__bird 
+    &-info 
+      margin-left: 10px
+      &__title 
+        font-size: 27px
+        line-height: 35px
+      &__subtitle 
+        font-size: 13px
+        line-height: 19px
+      &__button 
+        font-size: 16px
+  .aside
+    &-nav
+      flex-wrap: wrap
+      &__title
+        font-size: 24px
+        margin-top: 50px
+      &__info 
+        margin-bottom: 20px
+    &-slider
+      justify-content: center
+      &__slide
+  article
+    height: 715px
+    background-position: -450px
+  .article
+    &-title 
+      &__img 
+        width: 50px
+        height: 50px
+      &__text 
+        font-size: 24px
+        line-height: 30px
+    &-info 
+      font-size: 18px
+      line-height: 22px
+      &__text
+        margin-bottom: 30px
+  .footer 
+    &-we 
+      display: grid
+      grid-template-columns: 50%
+      grid-template-rows: 110px 130px 110px
+      grid-template-areas: "block rep" "block rep" "new info" "new info" "cont cont"
+      &__block
+        display: block
+        padding-left: 40px
+        &-logo 
+        width: 100%
+        grid-area: block
+      &__reproduction
+        padding-top: 105px
+        grid-area: rep
+        padding-left: 50px
+      &__new
+        grid-area: new
+        padding-left: 50px
+      &__info 
+        grid-area: info
+        padding-left: 50px
+      &__contaks
+        border-top: 2px solid #C3D1C6
+        grid-area: cont 
+        display: flex
+        flex-wrap: wrap
+        margin: 0
+        justify-content: center
+        &-image
+          height: 18px
+          width: 100%
+          margin: 0 145px 0 145px
+          justify-content: space-between
+          &__img 
+            margin: 0
+
+@media (max-width: 320px)  
+  .container 
+    width: 90%
+ 
+
+
+
+
+  
+
+ 
+
+    
+
+
+
+    
+      
+  
+
+
+

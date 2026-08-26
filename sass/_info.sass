@@ -1,0 +1,70 @@
+.info
+  height: 100vh
+  position: relative
+  margin-top: 175px
+  font-family: 'Montserrat Alternates', sans-serif
+  font-weight: 300
+  font-size: 32px
+  &-container 
+  &-title
+    width: 678px
+    opacity: 0
+    transform: translateY(30px)
+    transition: opacity 2.5s ease-out, transform 1s ease-out
+    transition-delay: 0.3s // Задержка 0.3 секунды перед началом анимации
+    &.show
+      opacity: 1
+      transform: translateY(0)
+      &-item
+        opacity: 1
+        transform: translateX(0)
+
+  &-service
+    width: 678px
+    line-height: 24px
+    cursor: pointer
+    animation: pulse-text 2s infinite /* Пульсация */
+    font-weight: normal
+    &__list
+      position: absolute
+      top: 270px
+      left: -100% /* Скрыто слева */
+      width: 678px
+      line-height: 50px
+      opacity: 1
+      transform: translateX(-50px) // Начинаем за экраном слева
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out, left 0.5s ease
+      &-item
+        opacity: 0
+        transform: translateX(-20px) /* Элементы будут немного сдвинуты влево */
+        transition: opacity 0.5s, transform 1s
+
+  &-img
+    position: absolute
+    top: 300px
+    right: 0
+  &-circle
+    width: $circle-size
+    height: $circle-size
+    border-radius: 50%
+    background: radial-gradient(circle, #{$color-center} 0%, #{$color-mid} 50%, #{$color-edge} 90%, #{$color-outer} 100%)
+    box-shadow: 0 0 100px $glow-color, 0 0 300px $glow-color
+    animation: pulse 3s infinite ease-in-out
+    position: absolute
+    top: 100px
+    right: 160px
+
+.info-service__list-item:nth-child(1)
+  transition-delay: 0.3s /* Задержка для первого элемента */
+
+.info-service__list-item:nth-child(2)
+  transition-delay: 1s /* Задержка для второго элемента */
+
+.info-service__list-item:nth-child(3)
+  transition-delay: 1.7s /* Задержка для третьего элемента */
+
+.open
+  left: 250px /* При открытии выезжает на экран */
+  &-item
+    opacity: 1 /* Делаем элементы видимыми */
+    transform: translateX(0) /* Элементы выезжают на экран */

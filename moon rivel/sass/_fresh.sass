@@ -1,0 +1,110 @@
+.fresh
+  margin-top: 20px
+  &-container
+    max-width: 100%
+    display: flex
+    justify-content: space-between
+    height: 850px
+  &-left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__box
+      width: 400px
+      height: 49%
+      background-color: #EDEDED
+      overflow: hidden
+      padding-left: 30px
+      transition: filter 0.3s ease
+      &:hover
+        filter: brightness(0.7)
+        cursor: pointer
+      &-img
+        margin: 47px 70px 67px 40px
+        transition: transform 0.3s ease
+
+      &-title
+        color: #000000
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 16px
+        letter-spacing: 2px
+        margin: 0 0 9px 0
+      &-subtitle
+        font-family: Roboto Condensed
+        color: #757575
+        font-weight: 300
+        font-size: 18px
+        margin: 0 0 9px 0
+      &-price
+        color: #EFC58B
+        font-size: 18px
+        font-weight: 300
+        margin: 0
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__box
+      width: 400px
+      height: 49%
+      background-color: #EDEDED
+      padding-left: 30px
+      transition: filter 0.3s ease
+      &:hover
+        filter: brightness(0.7)
+        cursor: pointer
+      &-img
+        margin: -10px 40px -5px 40px
+        transition: transform 0.3s ease
+      &-title
+        color: #000000
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 16px
+        letter-spacing: 2px
+        margin: 0 0 9px 0
+      &-subtitle
+        font-family: Roboto Condensed
+        color: #757575
+        font-weight: 300
+        font-size: 18px
+        margin: 0 0 9px 0
+      &-price
+        color: #EFC58B
+        font-size: 18px
+        font-weight: 300
+        margin: 0
+  &-center
+    background-image: url(../img/etoile.png)
+    width: 600px
+    height: 100%
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    &:hover
+        filter: brightness(0.7)
+        cursor: pointer
+    &__wrapper
+      padding: 714px 300px 20px 30px
+    &__title
+      color: #ffffff
+      text-transform: uppercase
+      font-weight: 400
+      font-size: 16px
+      letter-spacing: 2px
+      margin: 0 0 9px 0
+    &__subtitle
+      font-family: Roboto Condensed
+      color: #ffffff
+      font-weight: 300
+      font-size: 18px
+      margin: 0 0 9px 0
+    &__price
+      color: #ffffff
+      font-size: 18px
+      font-weight: 300
+      margin: 0
+
+.fresh-left__box:hover .fresh-left__box-img
+  transform: scale(1.1)

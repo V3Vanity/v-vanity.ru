@@ -1,0 +1,66 @@
+@font-face
+  font-family: 'AVA'
+  src:
+    url: ('./fonts/AVA.woff2') format('woff2')
+    url: ('./fonts/AVA.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Bounded'
+  src:
+    url: ('./fonts/Bounded-Regular.woff2') format('woff2')
+    url: ('./fonts/Bounded-Regular.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'DaMiOne'
+  src:
+    url: ('./fonts/DaMiOne.woff2') format('woff2')
+    url: ('./fonts/DaMiOne.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+*
+  color: #fff
+body
+  margin: 0
+  background-color: #000000
+
+.container
+  width: 1200px
+  margin: auto
+
+// Анимации 
+
+.glow-effect
+  transition: box-shadow 0.5s ease, transform 0.5s ease
+  &:hover
+    box-shadow: 0 0 35px 1px rgba(15, 2, 141, 0.858)
+    transform: scale(1.05)/* Можно менять масштаб */
+.glow-text
+  transition: text-shadow 0.3s ease, transform 0.5s ease
+  &:hover
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7)
+    transform: scale(1.05)
+.glow-svg
+  transition: filter 0.3s ease, transform 0.5s ease
+  &:hover
+    filter: drop-shadow(0 0 15px rgb(144, 0, 255))
+    transform: scale(1.1)
+
+@keyframes slideIn
+  0%
+    left: -420px
+    opacity: 0
+
+  100%
+    left: 0
+    opacity: 1
+
+
+
